@@ -7,11 +7,13 @@ class Memory
 
 {
 
-public:
+private:
 
 	DWORD processID;
 	HANDLE processHandle;
 	LPCSTR windowName;
+
+public:
 
 	Memory(LPCSTR windowName)
 
