@@ -9,13 +9,13 @@ class Memory
 
 Memory(LPCSTR windowName);
 
-template <class T>
+template <typename T>
 T ReadMemory(uintptr_t addressToRead);
 
-template <class T>
+template <typename T>
 void WriteMemory(uintptr_t addressToWrite, T desiredValue);
 
-DWORD GetProcessID(LPCWSTR processName);
+DWORD GetProcessId(LPCWSTR processName);
 
 uintptr_t GetModuleBase(LPCWSTR moduleName);
 
